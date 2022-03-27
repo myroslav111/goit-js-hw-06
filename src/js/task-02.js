@@ -22,3 +22,16 @@ const ingredients = [
   console.log(ingridientsCommonList);
   
 
+  // const makeList = arr => 
+  //   arr.map(el => {
+  //     const itemOfList = document.createElement('li')
+  //     itemOfList.classList.add('item')
+  //     itemOfList.textContent = el
+  //     const theMainTag = document.querySelector('#ingredients')
+
+
+  //     return theMainTag.append(itemOfList)
+  //   })
+  
+  //   console.log(makeList(ingredients));
+
