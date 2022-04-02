@@ -2,15 +2,15 @@
 
 const refsInput = document.querySelector('input')
 
-refsInput.addEventListener('input', updatingdInput)
-refsInput.addEventListener('blur', toVerifyDataInput)
+refsInput.addEventListener('input', onInputUpdatingdInput)
+refsInput.addEventListener('blur', onBlurVerifyDataInput)
 
-function updatingdInput (event) {
+function onInputUpdatingdInput (event) {
     event.currentTarget.textContent = event.currentTarget.value
     
 }
 
-function toVerifyDataInput (event){
+function onBlurVerifyDataInput (event){
     const dataLengthValue = Number(refsInput.getAttribute('data-length'))
 
     if(event.currentTarget.classList.contains('invalid') && event.currentTarget.textContent.length === dataLengthValue){
