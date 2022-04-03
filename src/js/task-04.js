@@ -6,15 +6,15 @@ const refsBtnIncr = document.querySelector('[data-action="increment"]')
 const refsValue = document.querySelector('#value')
 let counterValue = 0
 
-refsBtnDecr.addEventListener('click', onClickBtnDecrement)
-refsBtnIncr.addEventListener('click', onClickBtnIncrement)
+refsBtnDecr.addEventListener('click', onBtnDecrementClick)
+refsBtnIncr.addEventListener('click', onBtnIncrementClick)
 
-function onClickBtnDecrement (event) {
+function onBtnDecrementClick (event) {
     counterValue -= 1
     refsValue.textContent = counterValue
 }
 
-function onClickBtnIncrement (event) {
+function onBtnIncrementClick (event) {
     counterValue += 1
     refsValue.textContent = counterValue
 }

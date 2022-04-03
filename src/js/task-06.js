@@ -3,14 +3,14 @@
 const refsInput = document.querySelector('input')
 
 refsInput.addEventListener('input', onInputUpdatingdInput)
-refsInput.addEventListener('blur', onBlurVerifyDataInput)
+refsInput.addEventListener('blur', onInputVerifyDataInputBlur)
 
 function onInputUpdatingdInput (event) {
     event.currentTarget.textContent = event.currentTarget.value
     
 }
 
-function onBlurVerifyDataInput (event){
+function onInputVerifyDataInputBlur (event){
     const dataLengthValue = Number(refsInput.getAttribute('data-length'))
 
     if(event.currentTarget.classList.contains('invalid') && event.currentTarget.textContent.length === dataLengthValue){

@@ -1,13 +1,29 @@
 'use strict'
 
-const containerForm = document.querySelector('.login-form')
-console.log(containerForm);
-const submitBtn = document.querySelector('button')
-console.log(submitBtn);
+const Refsform = document.querySelector('.login-form')
+Refsform.addEventListener('submit', onFormSubmit)
 
-containerForm.addEventListener('submit', onCheckForm)
+function onContainerFormChangeCheckingInput (event) {
+    const inputEmailTextContent = event.currentTarget.email
+    const inputPassPassText = event.currentTarget.password
 
-function onCheckForm (event) {
-    console.log(event);
-    event.currentTarget.preventDefault()
+    if(inputEmailTextContent.value === '' || inputPassPassText.value === '') {
+    
+        return alert('all text fields must be filled')
+    }
+
+    const formData = new FormData(event.currentTarget)
+    const formObj = {}
+    formObj.email = event.currentTarget.email.value
+    formObj.password = event.currentTarget.password.value
+    console.log(formObj);
+    event.currentTarget.reset();
 }
+
+function onFormSubmit (event) {
+    event.preventDefault() 
+    onContainerFormChangeCheckingInput(event)
+}
+
+
+
