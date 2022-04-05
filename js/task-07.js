@@ -3,10 +3,12 @@
 const refsInputRange = document.querySelector('#font-size-control')
 const refsText = document.querySelector('#text')
 
-refsInputRange.addEventListener('click', onInputClickRangeShadowing)
+refsInputRange.addEventListener('input', onInputClickRangeShadowing)
+
 
 function onInputClickRangeShadowing (event) {
-    const unitOfSize = 'px'
-    refsText.style.fontSize = event.currentTarget.value + unitOfSize
+
+refsText.style.fontSize = event.currentTarget.value + 'px'
+    
 }
 
