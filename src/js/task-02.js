@@ -16,11 +16,10 @@ const ingredients = [
     return listEl
     })
 
-
   const ingridientsCommonList = document.querySelector('#ingredients')
   ingridientsCommonList.append(...makeListIngridients)
-  console.log(ingridientsCommonList);
   
+  // SECOND OPTION
 
   // const makeList = arr => 
   //   arr.map(el => {
@@ -29,9 +28,8 @@ const ingredients = [
   //     itemOfList.textContent = el
   //     const theMainTag = document.querySelector('#ingredients')
 
-
   //     return theMainTag.append(itemOfList)
   //   })
   
-  //   console.log(makeList(ingredients));
+
 
