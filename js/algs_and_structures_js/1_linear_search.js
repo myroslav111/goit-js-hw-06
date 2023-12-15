@@ -16,3 +16,6 @@ function linearSearch(array, item) {
 
 // console.log(linearSearch(myArray, 35));
 // console.log(count);
+/**
+ * сложность такого алогоритма О от n где n это количество елементов в масиве O(n)
+ */

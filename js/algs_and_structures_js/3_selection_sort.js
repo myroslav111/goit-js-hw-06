@@ -19,3 +19,6 @@ function selectionSort(array) {
 
 // console.log(selectionSort(arr));
 // console.log(count);
+/**
+ *Сложность такого алгоритма О от n^2
+ */
