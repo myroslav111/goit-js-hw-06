@@ -31,6 +31,9 @@ function binarySearch(array, item) {
 
 function recursiveBinerySearch(array, item, start, end) {
   let middle = Math.floor((start + end) / 2);
+  //4
+  //6
+  //5
   count += 1;
   if (item === array[middle]) {
     return middle;
