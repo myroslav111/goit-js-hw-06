@@ -45,8 +45,8 @@ function recursiveBinerySearch(array, item, start, end) {
   }
 }
 
-console.log(recursiveBinerySearch(myArray, 6, 0, myArray.length));
-console.log(count);
+// console.log(recursiveBinerySearch(myArray, 6, 0, myArray.length));
+// console.log(count);
 
 /**
  *Сложность такого алгоритма О от log n2
