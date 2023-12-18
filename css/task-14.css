@@ -35,9 +35,6 @@
   border-radius: 10px 10px 0 0;
 }
 
-.date {
-}
-
 .name-month {
   font-size: 30px;
   font-weight: 400;
@@ -86,8 +83,6 @@
 .days div:hover:not(.empty) {
   border: 2px solid gray;
   cursor: pointer;
-}
-.empty {
 }
 
 .today {
